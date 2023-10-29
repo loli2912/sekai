@@ -1,0 +1,25 @@
+img {
+  opacity: 0;
+}
+img {
+  transition: 1.5s;
+}
+input:checked ~ img {
+  opacity: 100;
+  /* visibilit: visible; */
+}
+h3 {
+  opacity: 0;
+  font-style: oblique;
+}
+h3 {
+  transition: 1.5s;
+}
+input:checked ~ h3 {
+  opacity: 100;
+  /* visibility: visible; */
+}
+body {
+  background-image: url(../../Image/background.jpg);
+  background-size: 18pc;
+}
