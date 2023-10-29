@@ -20,6 +20,6 @@ input:checked ~ h3 {
   /* visibility: visible; */
 }
 body {
-  background-image: url(../../Image/background.jpg);
+  background-image: url(../Image/background.jpg);
   background-size: 18pc;
 }
