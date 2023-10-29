@@ -1,0 +1,106 @@
+html: quyết định nội dung hiển thị trên web, đánh dấu phần tử
+css: quyết định màu sắc, bố cục, làm đẹp
+js: các thao tác trên văn bản
+
+-<!DOCTYPE html> : khai bao ban dang su dung html5
+<html></html> : dinh nghia phan than 
+html co the kem the lang vd: <html lang="vi"></html>
+
+-<head></head> : title hiển thị cho user ,còn lại ko
+<meta charset="UTF-8"/>
+++<!--bang ma ky tu co trang web: ho tro cac ky tu ngoai bang chu cai tieng anh : viet, trung , han , nhat,..->>
+crtl + k +c comment nhanh
+ctrl + k +u uncomment nhanh
+<meta http->
+<meta name="viewport" content="width=device-width, initia;-scale=1.0" />
+-<body></body> : the boy
+the h: duoc sus dung de dinh nghia tieu de cua trang web
+the p: de chua cac doan van ban
+the b: bold = the strong( represent important content ) 
+the i: italic = the em: emphasic(represent important content)
+the u: underline
+the a: anchor- gan kem duong dan
+the img: image
+the ul: un-ordered list
+the ol: ordered list
+the li: the con cua ul va ol
+-tag & element
+[opening tag-content-closing tab]:element
+copy : alt + shift +down
+Thẻ p để phân đoạn( có ích khi dùng trình đọc màn hình )
+
+-Thẻ support
+thẻ break: <br> or <br />
+thẻ horizon rule: <hr> or <hr />
+
+-thẻ emmet
+ul>li	(tạo ul vs 1 li)
+ul>li*4 ( tạo ul với 4 li)
+ul>li*5{text$} (tạo ul với 5 li có content là text1->5) 
+<ol reversed> </ol>: đảo ngược thứ tự
+<ol type=""> </ol>: chọn dấu marking (a,A,i,I,1)
+
+-Thẻ a
+<a href=""></a> 
++ trống => reload 
++ # => trở về đầu trang
++ link => to link
++ link target="_self": mở luôn
+              "_blank": mở trong tab mới
++tel:phone => gọi bằng 1 app đã cài
++mailto:email => gửi email 
++mailto:email?attribute= => gửi mail kèm attribute
+++attribute có thể thêm:cc= & subject= & bcc=
+
+-the img
+<img src="" alt="">
++src có thẻ link web hoặc link host
+++xoa doan den dau hoi cham vân nhan ảnh  
++alt: hiển thị text khi hình ảnh lỗi
+      support screen reader
+      công cụ tìm kiếm dữ liệu trên gg
++width="" ,height="" xét 1 cái ko thì ảnh sẽ bị méo
+
+-html path
++path tương đối : ./(tên file) : access file cùng cấp
++path tương đối : viết tên : access trực tiếp file cùng cấp
++path trở về thư mục trên 1 cấp: ../ : access file trên 1 cấp
++path trở về thư mục trên 2 cấp: ../../ : access file trên 2 cấp
++path trở về n cấp: tương tự
++path tuyệt đối : lấy thẳng từ root path : đi từ gốc folder :/folder root/...
++path tương đối : thay đổi khi file thay đối cấp
++path tuyệt đối : không bị ảnh hưởng
+
+-git
+git clone linkgit : tai clone git ve may
+git push :day len github
+git init, git commit -m "", git push(can add origin)
+git pull :lay file ve may de sua
+git pull origin main
+git push -u origin link.git
+git push --set-upstream origin link.git
+git branch : check nhanh
+git branch -d tennhanh : xoa nhanh (ko duoc o trong nhanh bi xoa)
+git checkout tennhanh : chuyen con tro sang nhanh moi
+git log: show status log ful
+git log --online: show status log briefly
+git checkout idlog : chuyen doi ve code thoi diem luc dau
+git checkout -b tennhanh : tao nhanh moi 
+git push -u origin tenfile : push file
+
+-html entities:
+--dùng để represent những kí tự đặc biệt tra gg for the list
+--codebeauty : convert kí tự đỡ cần type( unescaped /escape section)
+-the pre : du nguyen dinh dang ko sua doi
+-the code : danh giau mot khuc van ban ( ko xuong dong )
+
+-thẻ table
+--the tr: mot hang(row)
+--the td: mot o du lieu(value)
+--the th: mot o tieu de(header)
+--the thread: define phần đầu của bảng
+--thẻ tbody: define phần thân của bảng
+--thẻ tfoot: define phần cuối của bảng
+--colspan ="number": define kích thước của một ô theo chiều row
+--rowspan ="number": define kích thước của một ô theo chiều column
+--thead>tr>th*3 : cách tạo row nhanh(tương tự vs tbody và tfoot)
